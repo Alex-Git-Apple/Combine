@@ -5,5 +5,7 @@
         <page name='limited subscription'/>
         <page name='assign'/>
         <page name='subscribe'/>
+        <page name='CurrentValueSubject'/>
+        <page name='PassthroughSubject'/>
     </pages>
 </playground>
