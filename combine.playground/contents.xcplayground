@@ -7,5 +7,6 @@
         <page name='subscribe'/>
         <page name='CurrentValueSubject'/>
         <page name='PassthroughSubject'/>
+        <page name='Published'/>
     </pages>
 </playground>
