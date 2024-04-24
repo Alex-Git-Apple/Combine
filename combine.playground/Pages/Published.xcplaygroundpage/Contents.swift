@@ -5,6 +5,7 @@ import Combine
 // When the property changes, publishing ocurrs in the property's `willSet` block, meaning the subscribers receive the new
 // value before it's actually set.
 
+// This wrapper is designed for SwiftUI. In UIKit, it's better to user CurrentValueSubject.
 class ViewModel {
     
     @Published var usernames = ["Bill"]

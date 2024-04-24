@@ -8,5 +8,6 @@
         <page name='CurrentValueSubject'/>
         <page name='PassthroughSubject'/>
         <page name='Published'/>
+        <page name='Future'/>
     </pages>
 </playground>
