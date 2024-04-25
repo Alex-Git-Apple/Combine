@@ -2,12 +2,16 @@
 <playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
     <pages>
         <page name='creating subscription'/>
-        <page name='limited subscription'/>
+        <page name='limited subscription + zip'/>
         <page name='assign'/>
         <page name='subscribe'/>
         <page name='CurrentValueSubject'/>
         <page name='PassthroughSubject'/>
         <page name='Published'/>
+        <page name='Scan+Reduce'/>
         <page name='Future'/>
+        <page name='map'/>
+        <page name='switchToLatest'/>
+        <page name='flatMap'/>
     </pages>
 </playground>

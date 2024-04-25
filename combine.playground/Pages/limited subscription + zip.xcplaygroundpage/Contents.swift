@@ -6,17 +6,11 @@ import Foundation
 
 let footbank = ["apple", "bread", "orange", "milk"].publisher
 
-//let sub = footbank.sink { completion in
-//    print("completion: \(completion)")
-//} receiveValue: { food in
-//    print("received \(food)")
-//}
-
 let timer = Timer.publish(every: 1, on: .main, in: .common)
     .autoconnect()
 
 let calendar = Calendar.current
-let endDate = calendar.date(byAdding: .second, value: 3, to: Date())!
+let endDate = calendar.date(byAdding: .second, value: 4, to: Date())!
 
 struct MyError: Error {
     
@@ -33,7 +27,7 @@ func throwAtEndDate(foodItem: String, date: Date) throws -> String {
 
 let sub2 = footbank
     .zip(timer)
-    .tryMap({ (foodItem, timestamp) in
+    .tryMap({ (foodItem, timestamp) -> String in
         try throwAtEndDate(foodItem: foodItem, date: timestamp)
     })
     .sink { completion in
