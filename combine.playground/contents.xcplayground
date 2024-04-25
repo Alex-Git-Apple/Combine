@@ -13,5 +13,6 @@
         <page name='map'/>
         <page name='switchToLatest'/>
         <page name='flatMap'/>
+        <page name='handle error'/>
     </pages>
 </playground>

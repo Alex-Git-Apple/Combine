@@ -19,6 +19,7 @@ class ImageFetcher {
         
         urlStringSubject
             .compactMap {  URL(string: $0) }
+            .buffer(size: 100, prefetch: .byRequest, whenFull: .dropOldest)
             .flatMap { url in
                 URLSession.shared.dataTaskPublisher(for: url)
                     .map(\.data)
