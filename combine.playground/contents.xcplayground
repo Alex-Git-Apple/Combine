@@ -14,5 +14,6 @@
         <page name='switchToLatest'/>
         <page name='flatMap'/>
         <page name='handle error'/>
+        <page name='Testing'/>
     </pages>
 </playground>
